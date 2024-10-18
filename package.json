@@ -1,0 +1,37 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "build:components": "node ./command/build.js",
+    "lib": "npm run build:components"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@types/lodash": "^4.17.6",
+    "@fullcalendar/core": "^5.10.1",
+    "@fullcalendar/daygrid": "^5.10.1",
+    "@fullcalendar/interaction": "^5.10.1",
+    "element-plus": "^2.7.6",
+    "lodash": "^4.17.21",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.0",
+    "wangeditor": "^4.7.9"
+  },
+  "devDependencies": {
+    "@types/mockjs": "^1.0.10",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "axios": "^1.7.2",
+    "fs-extra": "^11.2.0",
+    "mockjs": "^1.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  }
+}

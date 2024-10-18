@@ -1,0 +1,46 @@
+// 如何做到更改一些ui组件库不让我们修改的样式
+// 1、先在浏览器上审查元素找到对应的样式类。
+// 2、将其抽离出来，并使用一个父类包裹
+// 3、将其在App.vue文件中引入
+// 4、在组件中的父容器组件引入改类即可。
+
+.m-choose-dialog-body-height {
+    .el-dialog__body {
+        height: 600px;
+        overflow: scroll
+    }    
+}
+.my-list {
+    .el-tabs__nav {
+        width: 100%;
+        display: flex;
+    }
+    .el-tabs__item {
+        flex: 1;
+    }
+}
+.my-side-menu {
+    .el-menu-item  {
+        height: 70px !important;
+    }
+}
+
+.my-progress svg {
+    width: 126px;
+    height: 126px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 40px;
+      position: relative;
+      top: -100px;
+    }
+  }
+  .notification-poper {
+    padding: 0px !important;
+  }
